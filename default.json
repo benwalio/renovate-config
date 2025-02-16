@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:enableMajor",
+    ":automergeBranch",
+    ":disableRateLimiting",
+    ":dependencyDashboard",
+    ":separatePatchReleases",
+    ":skipStatusChecks",
+    ":timezone(America/New_York)",
+    "github>benwalio/renovate-config:autoMerge",
+    "github>benwalio/renovate-config:customManagers",
+    "github>benwalio/renovate-config:labels",
+    "github>benwalio/renovate-config:semanticCommits"
+  ],
+  "timezone": "America/New_York",
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
+  "commitBodyTable": true,
+  "rebaseWhen": "auto",
+  "platformCommit": "enabled"
+}
