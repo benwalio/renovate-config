@@ -7,13 +7,9 @@
     ":disableRateLimiting",
     ":dependencyDashboard",
     ":separatePatchReleases",
-    ":skipStatusChecks",
-    ":timezone(America/New_York)",
-    "github>benwalio/renovate-config:autoMerge",
-    "github>benwalio/renovate-config:customManagers",
-    "github>benwalio/renovate-config:labels",
-    "github>benwalio/renovate-config:semanticCommits"
+    ":skipStatusChecks"
   ],
+  "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
   "timezone": "America/New_York",
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
